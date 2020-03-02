@@ -1,0 +1,94 @@
+:root {
+    --body-font-family: 'Segoe UI', Helvetica, sans-serif;
+    --body-font-size: 16px;
+
+    --header-font: Georgia, 'Times New Roman', Times, serif;
+
+    --color-dark: #333;
+    --color-muted: #666;
+    --color-medium: #aaa;
+    --color-light: #ddd;
+}
+html,
+body {
+    font-size: var(--body-font-size);
+    line-height: 1.2em;
+    font-family: var(--body-font-family);
+    color: var(--color-dark);
+}
+/* card */
+.card {
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+.card>.media {
+    margin-right: 1rem;
+    max-width: var(--media-max-width);
+}
+.card.media-top,
+.card.media-bottom {
+    flex-direction: column;
+}
+.card.media-top>.media,
+.card.media-bottom>.media {
+    margin: 0 auto 1rem;
+    max-width: 100%;
+    display: block;
+}
+.card.media-bottom>.media {
+    margin: 1rem auto 0;
+    order: 1;
+}
+.card.media-right>.media {
+    order: 1;
+    margin: 0 0 0 1rem;
+}
+.card>.body {
+    flex: 1;
+}
+.card>.body,
+.card>.body:last-child {
+    margin-bottom: 0;
+}
+.card>.body>.title {
+    margin: 0 0 .1rem;
+    font-size: 1.6rem;
+    font-family: var(--header-font);
+}
+.card>.body>h2.title {
+    font-size:1.4rem;
+}
+.card>.body>h3.title {
+    font-size:1.2rem;
+}
+.card>.body>.subtitle {
+    margin: 0 0 .5rem;
+    font-size: 1.1rem;
+    color: var(--color-muted);
+}
+
+/*utilities classes*/
+.list-unstyled { list-style: none; padding: 0; }
+.text-center { text-align: center; }
+.text-muted { color:var(--color-muted); }
+.text-small { font-size: .8rem; }
+.img-center { display: block; margin: 0 auto; }
+.header-font { font-family: var(--header-font); }
+.m0 { margin: 0 !important; }
+.mb0 { margin-bottom: 0 !important; }
+.mt0 { margin-top: 0 !important; }
+.ml0 { margin-left: 0 !important; }
+.mr0 { margin-right: 0 !important; }
+.p0 { padding: 0 !important; }
+.pb0 { padding-bottom: 0 !important; }
+.pt0 { padding-top: 0 !important; }
+.pl0 { padding-left: 0 !important; }
+.pr0 { padding-right: 0 !important; }
+.w25{width:25%}
+.w50{width:50%}
+.w75{width:75%}
+.w100{width:100%}
+h1.header-font { font-size:1.6rem; }
+h2.header-font { font-size:1.4rem; }
+h2.header-font { font-size:1.3rem; }
